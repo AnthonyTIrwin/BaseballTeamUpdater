@@ -7,7 +7,7 @@ Load the project in visual studio, and then press the play button.
 
 The program will prompt user to enter in the initials for a given MLB team and then will generate a list of players from that team that the user can choose from.
 
-The user then enters the specific player's name, and then will be given the player's Name, Team, Position, Weight, Height, and Age.
+The user then enters the specific player's name, this is case sensitive, and then will be given the player's Name, Team, Position, Weight, Height, and Age.
 
 The user will them be prompted to update the player's team and weight.
 
