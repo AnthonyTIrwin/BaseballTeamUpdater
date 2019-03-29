@@ -65,6 +65,7 @@ namespace PlayerManager
         {
             Console.WriteLine("________________________");
             Console.WriteLine("What's {0}'s new team?", ABC);
+            Console.WriteLine("Please enter team initials:");
             var NewTeam = Console.ReadLine();
 
             int index = CvsList.FindIndex(x => x.Name.Contains(ABC));
@@ -82,7 +83,7 @@ namespace PlayerManager
 
         }
 
-        //calls list again so user can verify change
+        //calls player profile again so user can verify change
         public void UpdatedList()
         {
             Console.WriteLine("================================= ");
