@@ -66,14 +66,14 @@ namespace PlayerManager
         //Change Data for specific player
         public void PlayerChanger()
         {
-            Console.WriteLine("______________________");
-            Console.WriteLine("What's the new team?");
+            Console.WriteLine("________________________");
+            Console.WriteLine("What's {0}'s new team?", ABC);
             var NewTeam = Console.ReadLine();
 
             int index = CvsList.FindIndex(x => x.Name.Contains(ABC));
             CvsList[index].Popcorn = NewTeam;
 
-            Console.WriteLine("Would you like to change player's weight? Y or N ");
+            Console.WriteLine("Would you like to change {0} weight? Y or N ", ABC);
             var AskWeight = Console.ReadLine();
             if (AskWeight.ToLower() == "y")
             {
@@ -88,6 +88,8 @@ namespace PlayerManager
         //calls list again so user can verify change
         public void UpdatedList()
         {
+            Console.WriteLine("================================= ");
+            Console.WriteLine("Here's {0}'s updated profile:", ABC);
             foreach (var part in CvsList)
             {
                 if (ABC.ToLower() == part.Name.ToLower())
@@ -101,11 +103,13 @@ namespace PlayerManager
         public void SaveIt()
         {
             Console.WriteLine("Press enter to save it to file");
+            Console.ReadLine();
             using (var writer = new StreamWriter($"../../mlb_players.csv"))
             using (var csv = new CsvWriter(writer))
             {
                 csv.WriteRecords(CvsList);
             }
-        }
+            Console.WriteLine("Saved");
+        } 
     }
 }
