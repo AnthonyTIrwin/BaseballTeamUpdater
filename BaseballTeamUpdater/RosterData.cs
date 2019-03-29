@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PlayerManager
 {
+    //class that models data from .csv
     public class RosterData
     {
         public string Name { get; set; }
