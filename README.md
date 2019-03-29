@@ -1,5 +1,5 @@
-#Baseball Team Updater
-##This is a program that allows baseball player information to be updated and then saved back to file.
+# Baseball Team Updater
+### This is a program that allows baseball player information to be updated and then saved back to file.
 
 To Run:
 
