@@ -14,3 +14,5 @@ The user will them be prompted to update the player's team and weight.
 The player's updated profile will then be displayed, and then the user can save it back to mlb_players.csv.
 
 The program files included are Program.CS, UIClass.cs, ListMaker.CS, and ListMaker.CS. The .csv file is mlb_players.csv.
+
+The program utilizes the CsvHelper library.
