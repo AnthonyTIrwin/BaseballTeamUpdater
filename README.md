@@ -1,9 +1,9 @@
-Baseball Team Updater
-This is a program that allows baseball player information to be updated and then saved back to file.
+#Baseball Team Updater
+##This is a program that allows baseball player information to be updated and then saved back to file.
 
 To Run:
 
-Load the project in visual studio, and then press the play button.
+Load the project in visual studio, choose BaseballTeamUpdater.sln as the startup item.
 
 The program will prompt user to enter in the initials for a given MLB team and then will generate a list of players from that team that the user can choose from.
 
